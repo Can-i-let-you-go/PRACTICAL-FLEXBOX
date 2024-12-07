@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -52,7 +52,7 @@
     }
     
     .navbigbox {
-      background-color: red;
+      background-color: mediumblue;
       height: 30px;
       width: 60px;
     }
@@ -67,9 +67,9 @@
       display: flex;
       flex-grow: 1;
       gap: 5px;
-      padding: 5px;
-      flex-direction: column;
-      justify-content: flex-start;
+      padding: 10px;
+      justify-content: space-around;
+      
     }
     
     .maincont1, .maincont2 {
@@ -78,32 +78,38 @@
     
     .maincont1 {
       display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      gap: 4px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 180px;
+      width: 315x;
+      gap: 5px;
       padding: 5px;
     }
     
-    .mainitems {
+    .mainbox1 {
+      height: 150px;
       border: 1px solid black;
-      height: 75px;
-      width: 75px;
+      width: 310px;
     }
     
+  
     .maincont2 {
       display: flex;
-      flex-wrap:wrap;
-      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 180px;
+      width: 310px;
       gap: 5px;
-      padding: 10px;
-      justify-content: space-between;
+      padding: 5px;
     }
     
-    .main2items {
-      border: 1px solid black;
-      height: 150px;
-      width: 200px;
-    }
+     .mainbox2 {
+   height: 150px;
+   border: 1px solid black;
+   width: 240px;
+ }
     
     aside {
       display: flex;
@@ -115,7 +121,7 @@
     
     .asideitem {
       border: 1px solid black;
-      height: 30px;
+      height: 25px;
       width: 15vw;
     }
     
@@ -190,27 +196,16 @@
 <div class="container">
   <main>
     <div class="maincont1">
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
+      <div>Main Box 1
+      <div class="mainbox1"></div>
+      </div>
+      
     </div>
     
-    <div class="maincont2">
-      <div class="main2items"></div>
-      <div class="main2items"></div>
-      <div class="main2items"></div>
+    <div class="maincont1">
+     <div>Main Box 1
+      <div class="mainbox1"></div>
+    </div>
     </div>
   </main>
   <aside>
@@ -243,10 +238,12 @@
     <div class="footer2redbox"></div>
     <div class="footer2redbox"></div>
     <div class="footer2redbox"></div>
+    <div class="footer2redbox"></div>
   </div>
   
   <div>©Copyright All rights reserved.</div>
  </div>
+
 </footer>
 </body>
 </html>
